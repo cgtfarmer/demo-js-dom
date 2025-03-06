@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS DOM Demo</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+      </nav>
+
+      <h1 class="text-center">Lemonade Game</h1>
+    </header>
+
+    <main class="text-center">
+      <header>
+        <h2>
+          Machines: <span id="machine-count-display">0</span>
+        </h2>
+
+        <h2 class="mt-3">
+          Money: $<span id="money-display">0</span>
+        </h2>
+      </header>
+
+      <button onclick="makeLemonade();">Make Lemonade</button>
+
+      <br><br>
+
+      <button onclick="buyLemonadeMachine();">Buy Lemonade Machine ($100)</button>
+
+      <br><br>
+
+      <progress
+        id="machine-earnings-progress"
+        value="0"
+        min="0"
+        max="100"
+        style="width: 300px; padding: 32px 0px;"
+      ></progress>
+
+      <br><br>
+
+      <button onclick="reset();">Reset</button>
+
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
+
