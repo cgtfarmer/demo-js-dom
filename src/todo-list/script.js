@@ -1,11 +1,11 @@
 var addInputElement = document.querySelector('#add-input');
-var removeInputElement = document.querySelector('#remove-input');
+var removePersonInputElement = document.querySelector('#remove-input');
 var outputElement = document.querySelector('#output');
 
-var items = [];
+var people = [];
 
 function reset() {
-  items = [];
+  people = [];
 
   clearInputs();
 
@@ -15,10 +15,10 @@ function reset() {
 function clearInputs() {
   addInputElement.value = '';
 
-  removeInputElement.value = '';
+  removePersonInputElement.value = '';
 }
 
-function addItem() {
+function addPerson() {
   var newItem = addInputElement.value;
 
   if (!newItem) {
@@ -26,7 +26,7 @@ function addItem() {
     return;
   }
 
-  items.push(newItem);
+  people.push(newItem);
 
   clearInputs();
 
@@ -36,8 +36,8 @@ function addItem() {
 function render() {
   outputElement.innerHTML = '';
 
-  for (var i = 0; i < items.length; i++) {
-    var item = items[i];
+  for (var i = 0; i < people.length; i++) {
+    var item = people[i];
 
     outputElement.insertAdjacentHTML('beforeend', `
       <li>${item}</li>
@@ -45,8 +45,8 @@ function render() {
   }
 }
 
-function removeItem() {
-  var itemToRemove = removeInputElement.value;
+function removePerson() {
+  var itemToRemove = removePersonInputElement.value;
 
   if (!itemToRemove) {
     console.log('Input is blank');
@@ -56,12 +56,12 @@ function removeItem() {
   // Convert user input to 0-based indexing
   var itemIndexToRemove = (itemToRemove - 1);
 
-  if (itemIndexToRemove < 0 || itemIndexToRemove >= items.length) {
+  if (itemIndexToRemove < 0 || itemIndexToRemove >= people.length) {
     console.log('Invalid input value');
     return;
   }
 
-  items.splice(itemIndexToRemove, 1);
+  people.splice(itemIndexToRemove, 1);
 
   clearInputs();
 
