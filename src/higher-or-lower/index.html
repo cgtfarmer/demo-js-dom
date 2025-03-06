@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Higher or Lower</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Higher or Lower</h1>
+
+    <p>I'm thinking of a number between 1 and 100</p>
+
+    Guess: <input id="input" type="text" onchange="guess();">
+
+    <br>
+    <br>
+
+    <button onclick="reset();">Reset</button>
+
+    <h2 id="win" hidden>You win!</h2>
+    <h2 id="higher" hidden>Higher</h2>
+    <h2 id="lower" hidden>Lower</h2>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
