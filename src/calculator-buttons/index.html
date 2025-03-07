@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS DOM Demo</title>
+    <style>
+      button {
+        padding: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+      </nav>
+
+      <h1>Calculator (Buttons)</h1>
+    </header>
+
+    <main>
+      <div>
+        <span id="output"></span>
+      </div>
+
+      <div>
+        <button onclick="inputValue('7');">7</button>
+        <button onclick="inputValue('8');">8</button>
+        <button onclick="inputValue('9');">9</button>
+        <button onclick="divide();">/</button>
+      </div>
+
+      <div>
+        <button onclick="inputValue('4');">4</button>
+        <button onclick="inputValue('5');">5</button>
+        <button onclick="inputValue('6');">6</button>
+        <button onclick="multiply();">x</button>
+      </div>
+
+      <div>
+        <button onclick="inputValue('1');">1</button>
+        <button onclick="inputValue('2');">2</button>
+        <button onclick="inputValue('3');">3</button>
+        <button onclick="subtract();">-</button>
+      </div>
+
+      <div>
+        <button onclick="reset();">C</button>
+        <button onclick="inputValue('0');">0</button>
+        <button onclick="inputValue('.');">.</button>
+        <button onclick="add();">+</button>
+      </div>
+
+      <button onclick="equals();" style="padding: 8px 56px;">=</button>
+
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
+
