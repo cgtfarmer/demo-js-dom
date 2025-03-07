@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS DOM Demo</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+      </nav>
+
+      <h1>Calculator (Text)</h1>
+    </header>
+
+    <main>
+      <div style="margin-top: 24px;">
+        <span>A:</span>
+
+        <input id="a-input" type="number">
+      </div>
+
+      <div style="margin-top: 24px;">
+        <span>B:</span>
+
+        <input id="b-input" type="number">
+      </div>
+
+      <br><br>
+
+      <button onclick="add();">Add</button>
+
+      <button onclick="subtract();">Subtract</button>
+
+      <button onclick="multiply();">Multiply</button>
+
+      <button onclick="divide();">Divide</button>
+
+      <hr>
+
+      <div style="margin-top: 24px;">
+        <h2>Results</h2>
+
+        <span id="result"></span>
+      </div>
+
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
+
