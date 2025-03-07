@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS DOM Demo</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Todo List</h1>
+
+      <span>Add Item:</span><br>
+
+      <input id="add-input" type="text" onchange="addItem();"><br>
+
+      <button onclick="addItem();">Add</button>
+
+      <br><br>
+
+      <span>Remove Item:</span><br>
+
+      <input id="remove-input" type="number" onchange="removeItem();"><br>
+
+      <button onclick="removeItem();">Remove</button>
+
+      <br><br>
+
+      <button onclick="reset();">Reset</button>
+
+      <ol id="output">
+      </ol>
+
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
+

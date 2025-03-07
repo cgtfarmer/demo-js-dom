@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS DOM Demo</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+      </nav>
+    </header>
+
+    <main>
+      <header>
+        <h1>Image Filepaths</h1>
+
+        <p>Study the <code>src</code> property on each of these images, and the corresponding file locations in the code repository</p>
+      </header>
+
+      <div>
+        <h2>Image 1</h2>
+
+        <p><code>./</code> refers to the current directory</p>
+
+        <img src="./cat.jpeg" width="350px">
+      </div>
+
+      <div>
+        <h2>Image 2</h2>
+
+        <p>This traverses downward into child directories</p>
+
+        <img src="./assets/images/alex-hormozi-flexing.jpg" width="250px">
+      </div>
+
+      <div>
+        <h2>Image 3</h2>
+
+        <p><code>../</code> traverses upward into the parent directory</p>
+
+        <img src="../assets/images/hormozi.jpg" width="350px">
+      </div>
+    </main>
+  </body>
+</html>
+

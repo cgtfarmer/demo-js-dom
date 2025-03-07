@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS DOM Demo</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+      </nav>
+
+      <h1>Quadratic Formula Calculator</h1>
+    </header>
+
+    <main>
+      <img src="./assets/images/quadratic-formula.png" width="300px">
+
+      <section>
+        <h2 class="mb-3">Variables</h2>
+
+        <div class="form-input">
+          <span>A:</span>
+
+          <input id="a-input" type="number"><br>
+        </div>
+
+        <div class="form-input">
+          <span>B:</span>
+
+          <input id="b-input" type="number"><br>
+        </div>
+
+        <div class="form-input">
+          <span>C:</span>
+
+          <input id="c-input" type="number"><br>
+        </div>
+      </section>
+
+      <button onclick="reset();">Reset</button>
+      <button onclick="calculate();">Calculate</button>
+
+      <section class="mt-3">
+        <h2 class="mb-3">Results</h2>
+
+        <div>
+          <h3>Positive Result</h3>
+
+          <span id="positive-result"></span>
+        </div>
+
+        <div class="mt-3">
+          <h3>Negative Result</h3>
+
+          <span id="negative-result"></span>
+        </div>
+      </section>
+
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>

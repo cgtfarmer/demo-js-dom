@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS DOM Demo</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+      </nav>
+    </header>
+
+    <main>
+      <header>
+        <h1>Wage Table Generator</h1>
+      </header>
+
+      <section class="mt-3">
+        <button onclick="reset();">Reset</button>
+
+        <button onclick="generate();">Generate</button>
+
+        <div class="table-x-overflow">
+          <table class="my-3">
+            <thead>
+              <tr>
+                <th>$/hr</th>
+                <th>Day</th>
+                <th>Week</th>
+                <th>2 Weeks</th>
+                <th>Month</th>
+                <th>Quarter</th>
+                <th>2 Quarters</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+
+            <tbody id="output">
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
+
